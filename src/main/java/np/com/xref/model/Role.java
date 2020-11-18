@@ -1,6 +1,8 @@
 package np.com.xref.model;
 
 import lombok.Getter;
+import lombok.Setter;
+
 import org.hibernate.annotations.NaturalId;
 
 import javax.persistence.*;
@@ -8,6 +10,7 @@ import java.io.Serializable;
 
 @Entity
 @Getter
+@Setter
 @Table(name = "roles")
 public class Role implements Serializable {
 

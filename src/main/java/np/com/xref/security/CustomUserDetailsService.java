@@ -13,13 +13,10 @@ import np.com.xref.repository.UserRepository;
 @Service
 public class CustomUserDetailsService implements UserDetailsService {
 
+	@Autowired
     private UserRepository userRepository;
 
-    @Autowired
-    public CustomUserDetailsService(UserRepository userRepository) {
-        this.userRepository = userRepository;
-    }
-
+    
     @Override
     @Transactional
     public UserDetails loadUserByUsername(String email) {
